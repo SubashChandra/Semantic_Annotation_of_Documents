@@ -119,7 +119,13 @@
           </ul>
           <h2>Comparision</h2>
           <img src="https://raw.githubusercontent.com/SubashChandra/Semantic_Annotation_of_Documents/master/Untitled%20Diagram-2.png" alt="Mountain View" style="width:797px;height:390px;">
-          
+          <p>If we take top twenty words from each category it can be seen that labeled LDA has greatly increased the number of relevant words in the cluster, thereby affecting and increasing the accuracy. It can also be seen that cluster belonging to a particular category given by LDA has a lot of noise or say words which can be related to other categories as well, thereby it is less reliable to start with and so can’t be expected to accurately classify test data.</p>
+          <h2>
+            Observation    
+          </h2>
+          <p>
+            We started off with Cosine Similarity, which doesn’t cash-in semantic similarity in classifying test data. Latent Dirichlet Allocation though takes semantics into account, it doesn’t make the best use of training data, where label of each training document can’t be used to train the model. Labeled LDA improved on LDA, by taking in category each document belongs to as well during training, thereby providing most relevant set of words per category, so does a better job in categorizing test data.
+          </p>
      </section>
 
         <aside id="sidebar">
