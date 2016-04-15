@@ -72,9 +72,31 @@
               <li>Categories</li>
               <li>Abstract (Only for some papers)</li>
             </ul>
+            <li>Wiki dataset</li>
+            <p>Description : For all the acm categories a dataset was build having the summary of the wikipedia page (The First section of the wikipedia document).</p>
+            <li>dblp dataset</li> 
+            <p>Description : For initial tasks, this dataset was used to train the lda model. Though this is not useful for the final proposition of the model.</p>
+              
           </ol>
-          
-          
+          <h2>Our Solution</h2>   
+          <ul>
+            <li>
+              <h3> Cosine Similarity</h3>
+              <p>In our approach we took the wikipedia summary of each of the categories as separate documents and measured the cosine similarity of the test document with each of them and assigned the category whose wikipedia document was most similar.
+</p>
+            </li>
+            <li>
+              <h3>Latent Dirichlet Allocation</h3>
+              <p>
+                In our approach, we used LDA (topic modelling algorithm) to cluster documents and assign a category to each cluster depending on the cluster in which the wikipedia document of the category is matching the most. Then put the test document on same model and assigned the category depending on the cluster to which test document belonged and the category assigned to that cluster.
+              </p>
+            </li>
+            
+            <li>
+              <h3>Labeled Latent Dirichlet Allocation + Doc2Vec</h3>
+              <p>Accuracy can only be improved by supervised topic modelling i.e. by labelling the documents with topics and taking care of the semantic distance between the research paper and the categories.</p>
+            </li>    
+          </ul>
      </section>
 
         <aside id="sidebar">
