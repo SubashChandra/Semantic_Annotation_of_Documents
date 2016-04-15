@@ -95,6 +95,23 @@
               <p>Accuracy can only be improved by supervised topic modelling i.e. by labelling the documents with topics and taking care of the semantic distance between the research paper and the categories.</p>
               </li>
           </ul>
+          
+          <h2>
+            Results
+          </h2>
+          <ul>
+            <li>
+              The simple cosine similarity approach could not encompass the semantic part of the documents and hence the categories. The Keyword matching though was acceptable. It is because no latent idea was incorporated in the model. 5% for the categories and 30% for the keywords.
+            </li>
+            <li>
+              Latent Dirichlet Allocation was able to incorporate the idea of semantic annotation as latent terms were found. But, then also the latent terms it predicts are not guaranteed to match the actual categories due to its unsupervised nature. The cluster has many wiki documents and hence the acm categories. The downsizing in the number of clusters resulted in the problem. The accuracy was less than 15%.
+            </li>
+            <li>
+              Labeled lda : This is the most sensible algorithm for this type of problem. The results show the MAP value of 59.31% which we believe is good provided the type of data.
+            </li>
+            
+          </ul>
+          
      </section>
 
         <aside id="sidebar">
