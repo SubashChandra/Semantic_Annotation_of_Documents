@@ -79,24 +79,19 @@
               
           </ol>
           <h2>Our Solution</h2>   
-          <ul>
-            <li>
+          
               <h3> Cosine Similarity</h3>
               <p>In our approach we took the wikipedia summary of each of the categories as separate documents and measured the cosine similarity of the test document with each of them and assigned the category whose wikipedia document was most similar.
 </p>
-            </li>
-            <li>
+            
               <h3>Latent Dirichlet Allocation</h3>
               <p>
                 In our approach, we used LDA (topic modelling algorithm) to cluster documents and assign a category to each cluster depending on the cluster in which the wikipedia document of the category is matching the most. Then put the test document on same model and assigned the category depending on the cluster to which test document belonged and the category assigned to that cluster.
               </p>
-            </li>
             
-            <li>
               <h3>Labeled Latent Dirichlet Allocation + Doc2Vec</h3>
               <p>Accuracy can only be improved by supervised topic modelling i.e. by labelling the documents with topics and taking care of the semantic distance between the research paper and the categories.</p>
-            </li>    
-          </ul>
+            
      </section>
 
         <aside id="sidebar">
